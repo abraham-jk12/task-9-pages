@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript String Methods</title>
+</head>
+<body>
+    <h2>JavaScript String Method Examples</h2>
+    <script>
+        let linebreak = "<br><br>";
+
+        let str = "Hello JavaScript";
+
+        // 1. length
+        document.write("length: " + str.length + linebreak);
+
+        // 2. toUpperCase()
+        document.write("toUpperCase(): " + str.toUpperCase() + linebreak);
+
+        // 3. toLowerCase()
+        document.write("toLowerCase(): " + str.toLowerCase() + linebreak);
+
+        // 4. charAt()
+        document.write("charAt(1): " + str.charAt(1) + linebreak);
+
+        // 5. indexOf()
+        document.write("indexOf('Java'): " + str.indexOf("Java") + linebreak);
+
+        // 6. lastIndexOf()
+        document.write("lastIndexOf('a'): " + str.lastIndexOf("a") + linebreak);
+
+        // 7. includes()
+        document.write("includes('Script'): " + str.includes("Script") + linebreak);
+
+        // 8. startsWith()
+        document.write("startsWith('Hello'): " + str.startsWith("Hello") + linebreak);
+
+        // 9. endsWith()
+        document.write("endsWith('Script'): " + str.endsWith("Script") + linebreak);
+
+        // 10. substring()
+        document.write("substring(6, 10): " + str.substring(6, 10) + linebreak);
+
+        // 11. slice()
+        document.write("slice(6, 16): " + str.slice(6, 16) + linebreak);
+
+        // 12. replace()
+        document.write("replace('JavaScript', 'World'): " + str.replace("JavaScript", "World") + linebreak);
+
+        // 13. trim()
+        let spaced = "   Hello World   ";
+        document.write("trim(): '" + spaced.trim() + "'" + linebreak);
+
+        // 14. split()
+        document.write("split(' '): " + str.split(" ") + linebreak);
+
+        // 15. repeat()
+        document.write("repeat(2): " + "Hi ".repeat(2) + linebreak);
+
+        // 16. concat()
+        document.write("concat(): " + "Hello".concat(" ", "World") + linebreak);
+
+        // 17. padStart()
+        document.write("padStart(10, '*'): " + "42".padStart(10, "*") + linebreak);
+
+        // 18. padEnd()
+        document.write("padEnd(10, '-'): " + "42".padEnd(10, "-") + linebreak);
+
+        // 19. match()
+        let s = "abc123def";
+        document.write("match(/[0-9]+/): " + s.match(/[a-z]+/g) + linebreak);
+        // g mtlb global (all occurences in the string and not just the first one)
+
+        // 20. replaceAll()
+        let rep = "apple apple banana";
+        document.write("replaceAll('apple', 'grape'): " + rep.replaceAll("apple", "grape") + linebreak);
+
+    </script>
+</body>
+</html>

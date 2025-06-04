@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Methods in JavaScript</title>
+</head>
+<body>
+    <h2>JavaScript Array Method Examples</h2>
+    <script>
+        let linebreak = "<br><br>";
+
+        //push()
+        let arr1 = [1, 2, 3];
+        arr1.push(4);
+        document.write("push(): " + arr1 + linebreak);
+
+        // pop()
+        let arr2 = [10, 20, 30];
+        arr2.pop();
+        document.write("pop(): " + arr2 + linebreak);
+
+        //shift()
+        let arr3 = [5, 6, 7];
+        arr3.shift();
+        document.write("shift(): " + arr3 + linebreak);
+
+        //unshift()
+        let arr4 = [9, 10];
+        arr4.unshift(8);
+        document.write("unshift(): " + arr4 + linebreak);
+
+        // slice()
+        let arr5 = [1, 2, 3, 4, 5];
+        let sliced = arr5.slice(1, 4);
+        document.write("slice(): " + sliced + linebreak);
+
+        // splice()
+        let arr6 = [100, 200, 300, 400];
+        arr6.splice(2, 1, 250); // remove 1 item at index 2 and insert 250
+        document.write("splice(): " + arr6 + linebreak);
+
+        // concat()
+        let arr7a = [1, 2];
+        let arr7b = [3, 4];
+        let combined = arr7a.concat(arr7b);
+        document.write("concat(): " + combined + linebreak);
+
+        // join()
+        let arr8 = ["a", "b", "c"];
+        document.write("join(): " + arr8.join("-") + linebreak);
+
+        //indexOf()
+        let arr9 = [10, 20, 30, 20];
+        document.write("indexOf(20): " + arr9.indexOf(20) + linebreak);
+
+        //  lastIndexOf()
+        document.write("lastIndexOf(20): " + arr9.lastIndexOf(20) + linebreak);
+
+        //  includes()
+        let arr10 = ["apple", "banana", "cherry"];
+        document.write("includes('banana'): " + arr10.includes("banana") + linebreak);
+
+        // reverse()
+        let arr11 = [1, 2, 3];
+        arr11.reverse();
+        document.write("reverse(): " + arr11 + linebreak);
+
+        // sort()
+        let arr12 = [30, 5, 100, 10];
+        arr12.sort((a, b) => a - b);
+        document.write("sort(): " + arr12 + linebreak);
+
+        //map()
+        let arr13 = [1, 2, 3];
+        let mapped = arr13.map(x => x * 2);
+        document.write("map(): " + mapped + linebreak);
+
+        //filter()
+        let arr14 = [5, 10, 15, 20];
+        let filtered = arr14.filter(x => x > 10);
+        document.write("filter(): " + filtered + linebreak);
+
+        // reduce()
+        let arr15 = [1, 2, 3, 4];
+        let reduced = arr15.reduce((acc, curr) => acc + curr, 0);
+        document.write("reduce(): " + reduced + linebreak);
+
+        //forEach()
+        let arr16 = [2, 4, 6];
+        let output = ""; //initializing a string
+        arr16.forEach(x => output += (x + " "));
+        document.write("forEach(): " + output.trim() + linebreak);
+        
+
+        //find()
+        let arr17 = [5, 12, 8, 130, 44];
+        let found = arr17.find(x => x > 10);
+        document.write("find(): " + found + linebreak);
+
+        //every()
+        let arr18 = [2, 4, 6];
+        document.write("every(x % 2 === 0): " + arr18.every(x => x % 2 === 0) + linebreak);
+
+        //some()
+        let arr19 = [1, 3, 5, 6];
+        document.write("some(x % 2 === 0): " + arr19.some(x => x % 2 === 0) + linebreak);
+    </script>
+</body>
+</html>
